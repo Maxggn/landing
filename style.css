@@ -1,0 +1,138 @@
+/* Write some CSS below */
+a {
+  color: #FFE7CC;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: .3s;
+
+}
+body {
+  font-family: initial;
+  color: #FFE7CC;
+  font-size: 22px;
+}
+
+h1, h2, h3 {
+  font-family: monospace;
+  color: #E1CEB5;
+}
+
+p {
+  color: #000000;
+  opacity: .6;
+}
+
+
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/e.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+
+}
+
+
+.banner h1 {
+  color: white;
+  font-size: 45px;
+  margin: 0;
+  text-align: center;
+}
+
+.banner p {
+  color: beige;
+  font-size: 24px;
+}
+
+.button-blue {
+  background-color: #F57328;
+  color: white;
+  padding: 16px 48px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.button-blue:hover {
+  background-color: #F57328;
+  color: white;
+}
+
+.card-white {
+  background: whitesmoke;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 200px;
+  text-align: center;
+  padding: 24px;
+  margin: 8px;
+}
+
+.card-white img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-white h3 {
+  margin-bottom: 1;
+}
+ .card-white {
+    width: auto;
+  }
+
+.footer p {
+  background: #F57328;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer p {
+  color: #F9F9F9;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
